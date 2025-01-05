@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>University Management System</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="university_icon.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="University Logo" style="height: 80px;">
+            <!-- <h1>Jayoti Vidyapeeth Women’s UniversitY (JVWU)</h1> -->
+            <div class="text">
+                <div class="mantra"><span>"यत्र नार्यस्तु पूज्यन्ते रमन्ते तत्र देवता:"</span></div>
+                <div class="text-1 capitalize">Jayoti Vidyapeeth Women’s UniversitY (JVWU)</div>
+                <div class="text-2"><span>Established by Govt. of Rajasthan </span> </div>
+                <div class="text-3"><a href="documents/UGC-letter.pdf" target="_blank" style="color: white;text-decoration: none;">2(f) & (12b) UGC Approved , NAAC Accredited</a></div>
+                <div class="text-4"><a href="documents/UGC-letter.pdf" target="_blank" style="color: white;text-decoration: none;">Leading Women’s  University In India</a></div>
+                </div>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login" class="login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="intro">
+        <div class="intro-content">
+            <h2 style="color: grey;">Welcome to the University Management System</h2>
+            <marquee behavior="" direction="">
+                <img style="height: 150px;" src="IMG-20250105-WA0005.jpg" alt="">
+                <img style="height: 150px;" src="IMG-20250105-WA0006.jpg" alt="">
+                <img style="height: 150px;" src="IMG-20250105-WA0007.jpg" alt="">
+                <img style="height: 150px;" src="IMG-20250105-WA0008.jpg" alt="">
+            </marquee>
+            <br>
+            <p style="color: whitesmoke;">Manage students, faculty, and courses efficiently!</p>
+            <br><br><br>
+            <a href="#services" class="btn">Explore Services</a>
+        </div>
+    </section>
+    <br>
+    <br><br>
+
+    <section id="about" class="section">
+        <h2>About the System</h2>
+        <p>Our University Management System helps in managing student records, faculty information, course registrations, and grades.</p>
+    </section>
+
+    <section id="services" class="section services">
+        <h2>Services</h2>
+        <br>
+        <div class="service-card">
+            <h3>Student Portal</h3>
+            <p>Access grades, assignments, and other student-related data.</p>
+            <button><a href="/student.html" id="redirect_student">Go to Student portal</a></button>
+        </div>
+        <div class="service-card">
+            <h3>Faculty Portal</h3>
+            <p>Manage course content, assignments, and grade students.</p>
+            <button onclick="redirectToPortal('faculty')">Go to Faculty Portal</button>
+            
+        </div>
+        <div class="service-card">
+            <h3>Admin Portal</h3>
+            <p>Administer the entire university system including user management and course creation.</p>
+            <button onclick="redirectToPortal('admin')">Go to Admin Portal</button>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>Contact Us: jvwu@jvwu.ac.in| +123 456 789</p>
+    </footer>
+
+    <div id="login" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Login to your account</h3>
+            <form action="login-action" method="post">
+                <input type="text" placeholder="Username" required><br>
+                <input type="password" placeholder="Password" required><br>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
